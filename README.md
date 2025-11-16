@@ -1,1 +1,1 @@
-YETKİLİ ALIM FORMU
+
