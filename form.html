@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>The Black Citadel — Yetkili Alım</title>
+  <style>
+    :root{
+      --bg:#121216;
+      --panel:#1a1c22;
+      --panel-2:#20232b;
+      --text:#e6e6eb;
+      --text-2:#a9a9b3;
+      --accent:#b135ff; /* mor vurgu */
+      --border:#2a2d36;
+    }
+    body{
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter, Segoe UI, sans-serif;
+      margin:0; padding:0;
+    }
+    .container{max-width:800px; margin:40px auto; padding:0 24px;}
+    .card{
+      background:var(--panel);
+      border:1px solid var(--border);
+      border-radius:14px;
+      box-shadow:0 10px 30px rgba(0,0,0,.35);
+      padding:22px;
+    }
+    h1{font-size:26px; margin:0 0 10px; color:var(--text);}
+    p.sub{color:var(--text-2); font-size:14px; margin:0 0 18px;}
+    hr{height:2px; background:linear-gradient(90deg,var(--accent), transparent 70%); border:none; margin:16px 0 22px;}
+    label{display:block; margin:12px 0 6px; font-weight:700; color:var(--text-2);}
+    input, textarea{
+      width:100%;
+      background:var(--panel-2);
+      color:var(--text);
+      border:1px solid var(--border);
+      border-radius:10px;
+      padding:10px;
+      font-size:14px;
+    }
+    textarea{min-height:80px; resize:vertical;}
+    .btn{
+      margin-top:20px;
+      background:var(--accent);
+      color:white;
+      border:none;
+      border-radius:12px;
+      padding:12px 18px;
+      font-weight:700;
+      cursor:pointer;
+      transition:filter .2s;
+    }
+    .btn:hover{filter:brightness(1.1);}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Yetkili Alım Formu</h1>
+      <p class="sub">Soruları doldurup bize gönderin. Başvurular incelenecek ve uygun görülenlere yetkili rolü verilecektir.</p>
+      <hr/>
+
+      <form>
+        <label>1. Discord Adın ve Tagin:</label>
+        <input type="text" placeholder="Örn: babapiro#743867894537604"/>
+
+        <label>2. Kaç yaşındasın?</label>
+        <input type="number" min="13" placeholder="Yaşınızı girin"/>
+
+        <label>3. Aktif olduğun saatler ve günler:</label>
+        <textarea placeholder="Hangi saatlerde sunucuda olabiliyorsun?"></textarea>
+
+        <label>4. Daha önce moderatör / yetkili tecrüben var mı?</label>
+        <textarea placeholder="Varsa nerelerde ve ne kadar süreyle?"></textarea>
+
+        <label>5. Sunucuda neden yetkili olmak istiyorsun?</label>
+        <textarea></textarea>
+
+        <label>6. Kendini bize tanıt:</label>
+        <textarea></textarea>
+
+        <label>7. Eğer bir üye kuralları çiğnerse nasıl davranırsın?</label>
+        <textarea></textarea>
+
+        <label>8. Eklemek istediğin başka bir şey var mı?</label>
+        <textarea></textarea>
+
+        <button class="btn">Başvuruyu Gönder</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
